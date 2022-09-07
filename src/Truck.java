@@ -3,6 +3,13 @@ public class Truck extends AutoTransport{
         super(modelName, wheelsCount);
     }
 
+    @Override
+    public void checkTransport() {
+        updateTyre();
+        checkEngine();
+        checkTrailer();
+    }
+
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
